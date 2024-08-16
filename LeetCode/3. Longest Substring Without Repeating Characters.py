@@ -2,6 +2,7 @@
 import re
 
 class Solution(object):
+    # high time complexity
     def lengthOfLongestSubstring(self, s):
         """
         :type s: str
