@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1732055261 source:c:\users\bebo\desktop\linkedlist\main\main.cpp
+	<iostream>
+	"Node.h"
+	"LinkedList.h"
+
+1732046445 c:\users\bebo\desktop\linkedlist\main\include\node.h
+
+1732042927 source:c:\users\bebo\desktop\linkedlist\main\src\linkelist.cpp
+	"LinkeList.h"
+
+1732042927 c:\users\bebo\desktop\linkedlist\main\include\linkelist.h
+
+1732046481 source:c:\users\bebo\desktop\linkedlist\main\src\node.cpp
+	"Node.h"
+	<iostream>
+
+1732054679 c:\users\bebo\desktop\linkedlist\main\include\linkedlist.h
+	"Node.h"
+
+1732054874 source:c:\users\bebo\desktop\linkedlist\main\src\linkedlist.cpp
+	"LinkedList.h"
+	<iostream>
+
