@@ -27,6 +27,12 @@ void LinkedList<KT,DT>::toFirst(){
     prev = nullptr;
 }
 
+
+template <typename KT,typename DT>
+bool LinkedList<KT,DT>::atFirst(){
+    return head==cursor;
+}
+
 template <typename KT,typename DT>
 bool LinkedList<KT,DT>::listIsEmpty(){
     return head == nullptr;
@@ -44,8 +50,13 @@ void LinkedList<KT,DT>::toEnd(){
     if(!listIsEmpty()) while(cursor->next != nullptr) advance();
 }
 
+template <typename KT,typename DT>
+bool LinkedList<KT,DT>::atEnd(){
+    return cur->next == nullptr;
+}
+
 template <typename KT, typename DT>
-int LinkedList<KT,DT>::length(){
+int LinkedList<KT,DT>::listSize(){
     Node<KT,DT>* q;
     int c = 0;
     q = head;
@@ -64,6 +75,17 @@ void LinkedList<KT, DT>::insertFirst(KT key, DT data){
     head = pnew;
     cursor = head;
     prev = NULL;
+}
+
+template <typename KT, typename DT>
+void LinkedList<KT, DT>::insertEnd(KT key, DT data){
+    toEnd();
+    Node<KT,DT> node(key,data);
+    Node<KT,DT>* pnew = &node;
+    pnew->next = nullptr;
+    cursor->next = pnew;
+    prev = cursor;
+    advance();
 }
 
 template <typename KT, typename DT>
@@ -95,8 +117,6 @@ void LinkedList<KT,DT>::traverse(){
         std::cout << "key: " << pq->key << " value: " << pq->data << std::endl;
         pq = pq->next;
     }
-
-    return;
 };
 
 template <typename KT, typename DT>
@@ -112,7 +132,77 @@ DT LinkedList<KT,DT>::retrieveData(){
 };
 
 template <typename KT,typename DT>
-LinkedList<KT,DT>::~LinkedList(){};
+void LinkedList<KT,DT>::deleteNode(){
+    Node<KT,DT>* next = cursor->next;
+    delete cursor;
+    cursor = next;
+    prev->next = cursor;
+}
+
+template <typename KT,typename DT>
+void LinkedList<KT,DT>::deleteEnd(){
+    Node<KT,DT>* cur = cursor;
+    while (cur->next != nullptr)
+    {
+        cur = cur->next;
+    }
+    delete cur;
+}
+
+template <typename KT,typename DT>
+void LinkedList<KT,DT>::deleteFirst(){
+    Node<KT,DT>* next = head->next;
+    delete head;
+    head = next;
+}
+
+template <typename KT,typename DT>
+void LinkedList<KT,DT>::makeListEmpty(){
+    Node<DT,KT>* current = head;
+    while (current != nullptr) {
+        Node<DT,KT>* next = current->next;
+        delete current;
+        current = next;
+    }
+    head = nullptr;
+}
+
+template <typename KT,typename DT>
+bool LinkedList<KT,DT>::search(KT key){
+    while(cursor->next != nullptr){
+        if(cursor->key == kry){
+            return true
+        }
+        cursor = cursor->next;
+    }
+    return false;
+}
+
+template <typename KT,typename DT>
+bool LinkedList<KT,DT>::orderInsert(KT key, DT value){
+    Node<KT,DT>* node = new Node<KT,DT>(key,value);
+    do
+    {
+        if(cursor->data < value){
+            cursor = cursor->next;
+        }
+        node->next = cursor->next;
+        cursor->next = node;
+        return true;
+    } while (cursor != nullptr);
+    return false;
+}
+
+template <typename KT,typename DT>
+LinkedList<KT,DT>::~LinkedList(){
+    Node<DT,KT>* current = head;
+    while (current != nullptr) {
+        Node<DT,KT>* next = current->next;
+        delete current;
+        current = next;
+    }
+    head = nullptr;
+};
 
 template class LinkedList<int, int>;
 template class LinkedList<float, float>;

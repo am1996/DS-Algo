@@ -19,15 +19,24 @@ class LinkedList
         bool listIsEmpty();
         bool curIsEmpty();
         void toFirst();
+        bool atFirst();
         void advance();
         void toEnd();
-        int length();
+        bool atEnd();
+        int listSize();
         void insertFirst(KT key,DT value);
+        void insertEnd(KT key,DT value);
         void insertAfter(KT key,DT value);
         void insertBefore(KT key,DT value);
         void updateData(Node<KT,DT>* p);
         DT retrieveData();
         void traverse();
+        void deleteFirst();
+        void deleteNode();
+        void deleteEnd();
+        void makeListEmpty();
+        bool search(KT key);
+        bool orderInsert(KT key, DT value);
         virtual ~LinkedList();
 
     protected:
