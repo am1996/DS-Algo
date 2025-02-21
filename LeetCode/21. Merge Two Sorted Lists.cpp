@@ -24,8 +24,9 @@ int main(void){
 
     ListNode* list3 = new ListNode();
     while(list1 && list2){
-        if(!list1 || list1->val > list2->val){
+        if(list1->val > list2->val || !list1){
             list3 = list2;
+            cout<<list3->val<<endl;
             list3 = list3->next;
             list2 = list2->next;
         }else if(!list2 || list2->val > list1->val){
@@ -35,9 +36,11 @@ int main(void){
         }else{
             list3 = list1;
             list3->next = list2;
-            list3->next->next = new ListNode();
+            list3 = list3->next->next;
+            list2 = list2->next;
+            list1 = list1->next;
         }
-        cout<<list3<<endl;
+        cout<<list3->val<<endl;
     }
     return 0;
 }
