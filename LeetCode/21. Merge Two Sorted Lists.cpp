@@ -1,46 +1,39 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 #include <iostream>
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
 using namespace std;
+class Solution {
+public:
+   ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        ListNode dummy;  // Dummy node to start the merged list
+        ListNode* tail = &dummy;  // Pointer to track the last node in the new list
 
-int main(void){
-    ListNode* l1 = new ListNode(1);
-    ListNode* l2 = new ListNode(2);
-    ListNode* l3 = new ListNode(4);
-    l1->next = l2;
-    l2->next = l3;
-    ListNode* list1 = l1;
-    ListNode* ll1 = new ListNode(1);
-    ListNode* ll2 = new ListNode(3);
-    ListNode* ll3 = new ListNode(4);
-    ll1->next = ll2;
-    ll2->next = ll3;
-    ListNode* list2 = ll1;
-
-    ListNode* list3 = new ListNode();
-    while(list1 && list2){
-        if(list1->val > list2->val || !list1){
-            list3 = list2;
-            cout<<list3->val<<endl;
-            list3 = list3->next;
-            list2 = list2->next;
-        }else if(!list2 || list2->val > list1->val){
-            list3 = list1;
-            list3 = list3->next;
-            list1 = list1->next;
-        }else{
-            list3 = list1;
-            list3->next = list2;
-            list3 = list3->next->next;
-            list2 = list2->next;
-            list1 = list1->next;
+        while (list1 && list2) {
+            if (list1->val < list2->val) {
+                tail->next = list1;
+                list1 = list1->next;
+            } else {
+                tail->next = list2;
+                list2 = list2->next;
+            }
+            tail = tail->next;
         }
-        cout<<list3->val<<endl;
+
+        // Attach remaining nodes (if any)
+        if (list1) {
+            tail->next = list1;
+        } else {
+            tail->next = list2;
+        }
+
+        return dummy.next;  // Return the merged list starting from the first real node
     }
-    return 0;
-}
+};
