@@ -4,7 +4,6 @@ modules = ["cpp-clang14", "python-3.12", "nodejs-20"]
 channel = "stable-24_05"
 
 [workflows]
-runButton = "C/C++"
 
 [[workflows.workflow]]
 name = "C/C++"

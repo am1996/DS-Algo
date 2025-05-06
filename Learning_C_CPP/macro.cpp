@@ -6,11 +6,13 @@
 #define pp(...)                                                                \
   do {                                                                         \
     printf("Value: %s\n", ##__VA_ARGS__);                                      \
+    if (sizeof(__VA_ARGS__) == 2)                                              \
+      print("done");                                                           \
   } while (0)
 #define STRINGIFY(x) #x
 #define MAKE_VAR(name, num) name##num
 
 int main(void) {
-  printf(STRINGIFY(HELLO WORLD));
+  pp("hello world");
   return 0;
 }
