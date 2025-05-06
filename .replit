@@ -4,7 +4,7 @@ modules = ["cpp-clang14", "python-3.12", "nodejs-20"]
 channel = "stable-24_05"
 
 [workflows]
-runButton = "Run Sockets"
+runButton = "Run"
 
 [[workflows.workflow]]
 name = "C/C++"
@@ -31,3 +31,20 @@ args = "clang++ -std=c++17 -o output Learning_C_CPP/wsockets.cpp"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "./output"
+
+[[workflows.workflow]]
+name = "Run"
+author = 8572783
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "clang++ -std=c++17 -o output Learning_C_CPP/readings.cpp"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./output"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
