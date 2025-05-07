@@ -39,7 +39,7 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "clang++ -std=c++20 -o output Learning_C_CPP/readings.cpp"
+args = "clang++ -std=c++2b -O3 -Wall -Wextra -pedantic -o output Learning_C_CPP/readings.cpp"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
