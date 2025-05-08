@@ -9,7 +9,7 @@ runButton = "C++ Run"
 [[workflows.workflow]]
 name = "C++ Run"
 author = 8572783
-mode = "sequential"
+mode = "parallel"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
