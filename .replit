@@ -14,3 +14,12 @@ mode = "parallel"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "cd Learning_C_CPP && g++ readings.cpp -o readings && ./readings"
+
+[[workflows.workflow]]
+name = "Curl Example"
+author = 8572783
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd Learning_C_CPP && g++ curl.cpp -o curl -lgumbo -lcurl && ./curl"
