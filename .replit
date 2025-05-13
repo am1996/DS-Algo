@@ -31,4 +31,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Learning_C_CPP && g++ curl.cpp -o curl -lgumbo -lcurl && ./curl"
+args = "cd Learning_C_CPP && g++ http_crow.cpp -o crow_server -pthread && ./crow_server"
