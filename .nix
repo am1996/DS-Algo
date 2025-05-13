@@ -1,5 +1,8 @@
+
 { pkgs }: {
   deps = [
-    pkgs.crowcpp
+    pkgs.gcc
+    pkgs.crow
+    pkgs.sqlite
   ];
 }

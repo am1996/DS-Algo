@@ -31,4 +31,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Learning_C_CPP && g++ http_crow.cpp -o crow_server -pthread && ./crow_server"
+args = "cd Learning_C_CPP/server && g++ http_crow.cpp -o crow_server -pthread -I/nix/store/$(ls /nix/store | grep crow | head -n1)/include && ./crow_server"
