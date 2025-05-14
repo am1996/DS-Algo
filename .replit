@@ -31,4 +31,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Learning_C_CPP/server && g++ http_crow.cpp -o crow_server -pthread -I./include $(pkg-config --cflags --libs sqlite3) && ./crow_server"
+args = "cd Learning_C_CPP/server && g++ http_crow.cpp -o crow_server -pthread -I./include -I/nix/store/*/include -lsqlite3 && ./crow_server"
