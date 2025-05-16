@@ -4,7 +4,7 @@ modules = ["cpp-clang14", "python-3.12", "nodejs-20"]
 channel = "stable-24_05"
 
 [workflows]
-runButton = "Run"
+runButton = "Run Bash Script"
 
 [[workflows.workflow]]
 name = "C++ Run"
@@ -32,3 +32,12 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "cd Learning_C_CPP/server && g++ http_crow.cpp -o crow_server -pthread -I./include -I/nix/store/*/include -lsqlite3 && ./crow_server"
+
+[[workflows.workflow]]
+name = "Run Bash Script"
+author = 8572783
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd Learning_bash && bash 1_lesson.sh"
