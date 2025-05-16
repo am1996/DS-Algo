@@ -1,5 +1,7 @@
 #!/bin/zsh
 declare -a arr=("hello" "world");
+declare -A ass_arr;
+echo $ass_arr[hello];
 echo ${arr[0]};
 (echo "hello") &
 wait
