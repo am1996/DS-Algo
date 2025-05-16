@@ -4,5 +4,7 @@ echo -n "hello world";
 
 a="hello";
 if [ "$a" = "hello" ]; then
-    echo "a is hello";
+    echo -n "a is hello";
+elif
+    echo "hello world";
 fi
