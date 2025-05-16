@@ -1,7 +1,8 @@
+
 #!/bin/bash
 echo -n "hello world";
 
 a="hello";
-if[[ $a -eq "hello"]]; then
+if [ "$a" = "hello" ]; then
     echo "a is hello";
 fi
