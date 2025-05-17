@@ -40,4 +40,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Learning_bash && bash 2_lesson.sh"
+args = "cd Learning_bash && bash 3_lesson.sh"
