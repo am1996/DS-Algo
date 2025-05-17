@@ -24,4 +24,4 @@ sed text.txt -i 's/hello/world/g' #replace hello with world in place in text.txt
 cat text.txt | grep -in hello #print lines with hello in text.txt with line numbers
 grep -Rinl hello / #search for hello in all files in / and lines
 grep -A 3 -B 3 hello text.txt #print 3 lines before and after hello in text.txt
-grep -REnl "hello|world" / #search for hello wr world in all files in / and lines
+grep -REnl "hello|world" --exclude-dir={.git,node_modules} / #search for hello wr world in all files in / and lines excluding .git, node_modules
