@@ -2,6 +2,7 @@ modules = ["cpp-clang14", "python-3.12", "nodejs-20"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["temurin-jre-bin-17", "openjdk17-bootstrap"]
 
 [workflows]
 runButton = "Run Bash Script"
