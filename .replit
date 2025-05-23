@@ -2,37 +2,10 @@ modules = ["cpp-clang14", "python-3.12", "nodejs-20"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["temurin-jre-bin-17", "openjdk17-bootstrap"]
+packages = ["temurin-jre-bin-17", "openjdk17-bootstrap", "mono", "dotnetCorePackages.sdk_9_0"]
 
 [workflows]
 runButton = "Run Bash Script"
-
-[[workflows.workflow]]
-name = "C++ Run"
-author = 8572783
-mode = "parallel"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd Learning_C_CPP && g++ readings.cpp -o readings && ./readings"
-
-[[workflows.workflow]]
-name = "Curl Example"
-author = 8572783
-mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd Learning_C_CPP && g++ curl.cpp -o curl -lgumbo -lcurl && ./curl"
-
-[[workflows.workflow]]
-name = "Run"
-author = 8572783
-mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd Learning_C_CPP/server && g++ http_crow.cpp -o crow_server -pthread -I./include -I/nix/store/*/include -lsqlite3 && ./crow_server"
 
 [[workflows.workflow]]
 name = "Run Bash Script"
@@ -41,4 +14,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Learning_bash && bash 4_lesson.sh"
+args = "cd \"Learning CSharp\" & mono 1_lesson.cs"
