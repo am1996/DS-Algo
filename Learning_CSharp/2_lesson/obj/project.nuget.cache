@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gWuLHdZRRe1vOVJ8zSLZUNLEuyqNiXKfp9YXFMCaJMz7mAaqpXlGTV6YqjBunDVxEVunj6mOiilDPWmQfnsfow==",
+  "dgSpecHash": "fIsrhWQc6foJOrbGNkJ4KgnNGpm2wt2JZtiIwdgPX2lISb5DrKnzLrVT4N+9r56ci2LQ+I8FOY7gAdIh/1nMiw==",
   "success": true,
   "projectFilePath": "/home/runner/workspace/Learning_CSharp/2_lesson/2_lesson.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/runner/.nuget/packages/htmlagilitypack/1.12.1/htmlagilitypack.1.12.1.nupkg.sha512"
+  ],
   "logs": []
 }

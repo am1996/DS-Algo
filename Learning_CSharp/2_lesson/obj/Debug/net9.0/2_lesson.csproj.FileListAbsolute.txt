@@ -13,3 +13,6 @@
 /home/runner/workspace/Learning_CSharp/2_lesson/obj/Debug/net9.0/2_lesson.pdb
 /home/runner/workspace/Learning_CSharp/2_lesson/obj/Debug/net9.0/2_lesson.genruntimeconfig.cache
 /home/runner/workspace/Learning_CSharp/2_lesson/obj/Debug/net9.0/ref/2_lesson.dll
+/home/runner/workspace/Learning_CSharp/2_lesson/bin/Debug/net9.0/HtmlAgilityPack.dll
+/home/runner/workspace/Learning_CSharp/2_lesson/obj/Debug/net9.0/2_lesson.csproj.AssemblyReference.cache
+/home/runner/workspace/Learning_CSharp/2_lesson/obj/Debug/net9.0/2_lesson.csproj.Up2Date
