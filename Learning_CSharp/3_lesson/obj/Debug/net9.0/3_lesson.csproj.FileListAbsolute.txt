@@ -1,0 +1,15 @@
+/home/runner/workspace/Learning_CSharp/3_lesson/bin/Debug/net9.0/3_lesson
+/home/runner/workspace/Learning_CSharp/3_lesson/bin/Debug/net9.0/3_lesson.deps.json
+/home/runner/workspace/Learning_CSharp/3_lesson/bin/Debug/net9.0/3_lesson.runtimeconfig.json
+/home/runner/workspace/Learning_CSharp/3_lesson/bin/Debug/net9.0/3_lesson.dll
+/home/runner/workspace/Learning_CSharp/3_lesson/bin/Debug/net9.0/3_lesson.pdb
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/3_lesson.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/3_lesson.AssemblyInfoInputs.cache
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/3_lesson.AssemblyInfo.cs
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/3_lesson.csproj.CoreCompileInputs.cache
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/3_lesson.sourcelink.json
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/3_lesson.dll
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/refint/3_lesson.dll
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/3_lesson.pdb
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/3_lesson.genruntimeconfig.cache
+/home/runner/workspace/Learning_CSharp/3_lesson/obj/Debug/net9.0/ref/3_lesson.dll
