@@ -2,6 +2,8 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 
+namespace _2_Lesson;
+
 public class AsyncLogger : IDisposable
 {
     private StreamWriter _writer;
