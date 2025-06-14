@@ -35,3 +35,4 @@ def ntlm_hash(password):
 
 scan_ports("8.8.8.8", [22, 80, 443, 3389])
 fuzz_domains("google.com", ["www", "mail", "ftp", "admin"], https=True)
+
