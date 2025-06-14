@@ -1,8 +1,8 @@
-modules = ["cpp-clang14", "python-3.12", "nodejs-20"]
+modules = ["cpp-clang14", "nodejs-20", "python-3.11", "python-3.12"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["temurin-jre-bin-17", "openjdk17-bootstrap", "mono", "dotnetCorePackages.sdk_9_0", "php83", "openvpn", "zsh", "libcap", "jq"]
+packages = ["temurin-jre-bin-17", "openjdk17-bootstrap", "mono", "dotnetCorePackages.sdk_9_0", "php83", "openvpn", "zsh", "libcap", "jq", "netexec", "wget", "tmux"]
 
 [workflows]
 runButton = "Run Bash Script"

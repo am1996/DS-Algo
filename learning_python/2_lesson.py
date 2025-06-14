@@ -7,3 +7,5 @@ def generator(a):
 
 
 gen = generator(a)
+def generator2(gen):
+  yield *gen
