@@ -1,0 +1,5 @@
+/home/runner/workspace/Learning_CSharp/5_lesson/obj/Debug/net9.0/5_lesson.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/workspace/Learning_CSharp/5_lesson/obj/Debug/net9.0/5_lesson.AssemblyInfoInputs.cache
+/home/runner/workspace/Learning_CSharp/5_lesson/obj/Debug/net9.0/5_lesson.AssemblyInfo.cs
+/home/runner/workspace/Learning_CSharp/5_lesson/obj/Debug/net9.0/5_lesson.csproj.CoreCompileInputs.cache
+/home/runner/workspace/Learning_CSharp/5_lesson/obj/Debug/net9.0/5_lesson.sourcelink.json
