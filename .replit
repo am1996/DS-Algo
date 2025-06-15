@@ -2,7 +2,7 @@ modules = ["cpp-clang14", "nodejs-20", "python-3.11", "python-3.12"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["temurin-jre-bin-17", "openjdk17-bootstrap", "mono", "dotnetCorePackages.sdk_9_0", "php83", "openvpn", "zsh", "libcap", "jq", "netexec", "wget", "tmux"]
+packages = ["temurin-jre-bin-17", "openjdk17-bootstrap", "mono", "dotnetCorePackages.sdk_9_0", "php83", "openvpn", "zsh", "libcap", "jq", "netexec", "wget", "tmux", "hashcat", "crunch"]
 
 [workflows]
 runButton = "Run Bash Script"
