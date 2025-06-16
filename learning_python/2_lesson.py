@@ -1,8 +1,10 @@
+import string
+
 class WordListGenerator:
 
   def __init__(self, wordlist, length):
     self.wordlist = wordlist
-    self.words = []
+    self.words = set()
     self.load_wordlist()
     self.generate_wordlist(length)
     self.save_wordlist()
@@ -18,6 +20,7 @@ class WordListGenerator:
 
   def generate_wordlist(self, length):
     self.words = [word for word in self.words if len(word) > length]
+    
     print(
         f"[+] Generated {len(self.words)} words with length greater than {length}"
     )
@@ -34,3 +37,7 @@ class WordListGenerator:
 
   def print_wordlist_length(self):
     print(f"[+] Wordlist length: {len(self.words)}")
+
+
+for i in string.punctuation:
+
