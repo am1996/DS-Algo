@@ -11,6 +11,5 @@ int main(void) {
   v.pop_back();
   v.clear();
   v.resize(10);
-  v.
   return 0;
 }
