@@ -1,15 +1,18 @@
+#include <algorithm>
 #include <iostream>
+#include <numeric>
 #include <vector>
-
 using namespace std;
 
 int main(void) {
   vector<int> v = {1, 2, 3, 4, 5};
-  v.push_back(6);
-  v.insert(v.begin() + 0, 98);
-  v.erase(v.begin() + 0);
-  v.pop_back();
-  v.clear();
-  v.resize(10);
+  // map function
+  vector<int> v2 = {1, 2, 3, 4, 5};
+  transform(v2.begin(), v2.end(), v2.begin(), [](auto i) { return i * 2; });
+
+  // reduce function
+  int sum =
+      accumulate(v2.begin(), v2.end(), 0, [](auto a, auto b) { return a + b; });
+  cout << sum << endl;
   return 0;
 }
