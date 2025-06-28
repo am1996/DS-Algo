@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <iostream>
+#include <map>
 #include <numeric>
 #include <vector>
 using namespace std;
@@ -13,6 +14,9 @@ int main(void) {
   // reduce function
   int sum =
       accumulate(v2.begin(), v2.end(), 0, [](auto a, auto b) { return a + b; });
-  cout << sum << endl;
+  map<string, string> m = {{"a", "b"}, {"c", "d"}};
+  for (auto [key, value] : m) {
+    cout << key << " " << value << endl;
+  }
   return 0;
 }
