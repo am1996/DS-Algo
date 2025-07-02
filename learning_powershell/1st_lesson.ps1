@@ -11,5 +11,19 @@ for($b = 0; $b -lt 5; $b++){
 $b = 0;
 do{
     Write-Host "This is a do-while loop iteration number: $b" -ForegroundColor Cyan
-    $b++
-}while($b -lt 5)
+    $b++;
+}while($b -lt 5);
+
+class a : System.Object {
+    [string]$name = "Default Name"
+    [int]$age = 0
+
+    a([string]$name, [int]$age) {
+        $this.name = $name
+        $this.age = $age
+    }
+}
+$instance = [a]::new("John Doe", 30)
+Write-Host "Name: $($instance.name), Age: $($instance.age)" -ForegroundColor Magenta
+Write-Host "This is the end of the script." -ForegroundColor White -BackgroundColor Blue
+Write-Host "Thank you for using PowerShell!" -ForegroundColor White -BackgroundColor Blue   
