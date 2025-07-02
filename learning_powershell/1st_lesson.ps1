@@ -25,5 +25,9 @@ class a : System.Object {
 }
 $instance = [a]::new("John Doe", 30)
 Write-Host "Name: $($instance.name), Age: $($instance.age)" -ForegroundColor Magenta
-Write-Host "This is the end of the script." -ForegroundColor White -BackgroundColor Blue
-Write-Host "Thank you for using PowerShell!" -ForegroundColor White -BackgroundColor Blue   
+[Math]::Sqrt(16) | Write-Host -ForegroundColor Cyan
+[System.DateTime]::Now | Where-Object {
+    $_.Hour -ge 12
+} | ForEach-Object {
+    Write-Host "Current time is: $($_.ToString('HH:mm:ss'))" -ForegroundColor Green
+}
