@@ -1,0 +1,9 @@
+/home/runner/workspace/Learning_C_CPP/3_lesson/Crow/CMakeFiles/uninstall.dir
+/home/runner/workspace/Learning_C_CPP/3_lesson/Crow/CMakeFiles/package.dir
+/home/runner/workspace/Learning_C_CPP/3_lesson/Crow/CMakeFiles/package_source.dir
+/home/runner/workspace/Learning_C_CPP/3_lesson/Crow/CMakeFiles/edit_cache.dir
+/home/runner/workspace/Learning_C_CPP/3_lesson/Crow/CMakeFiles/rebuild_cache.dir
+/home/runner/workspace/Learning_C_CPP/3_lesson/Crow/CMakeFiles/list_install_components.dir
+/home/runner/workspace/Learning_C_CPP/3_lesson/Crow/CMakeFiles/install.dir
+/home/runner/workspace/Learning_C_CPP/3_lesson/Crow/CMakeFiles/install/local.dir
+/home/runner/workspace/Learning_C_CPP/3_lesson/Crow/CMakeFiles/install/strip.dir
