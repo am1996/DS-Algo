@@ -1,33 +1,50 @@
-modules = ["cpp-clang14", "nodejs-20", "python-3.11", "python-3.12"]
+modules = ["cpp-clang14", "python-3.12", "nodejs-20"]
 
 [nix]
 channel = "stable-24_05"
-packages = [
-  "temurin-jre-bin-17",
-  "openjdk17-bootstrap",
-  "mono",
-  "dotnetCorePackages.sdk_9_0",
-  "php83",
-  "openvpn",
-  "zsh",
-  "libcap",
-  "jq",
-  "netexec",
-  "wget",
-  "tmux",
-  "hashcat",
-  "crunch",
-  "cmake",
-]
 
 [workflows]
-runButton = "Run Bash Script"
+runButton = "Run"
 
 [[workflows.workflow]]
-name = "Run Bash Script"
+name = "C/C++"
 author = 8572783
 mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd \"Learning CSharp\" & mono 1_lesson.cs"
+args = "clang++ -std=c++17 -o output Learning_C_CPP/macro.cpp"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./output"
+
+[[workflows.workflow]]
+name = "Run Sockets"
+author = 8572783
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "clang++ -std=c++17 -o output Learning_C_CPP/wsockets.cpp"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./output"
+
+[[workflows.workflow]]
+name = "Run"
+author = 8572783
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "clang++ -std=c++20 -o output Learning_C_CPP/readings.cpp"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./output"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
