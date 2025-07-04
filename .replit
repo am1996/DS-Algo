@@ -5,7 +5,7 @@ channel = "stable-24_05"
 packages = ["cmake"]
 
 [workflows]
-runButton = "Run"
+runButton = "Run Crow Server"
 
 [[workflows.workflow]]
 name = "C/C++"
@@ -45,6 +45,15 @@ args = "clang++ -std=c++20 -o output Learning_C_CPP/readings.cpp"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "./output"
+
+[[workflows.workflow]]
+name = "Run Crow Server"
+author = 8572783
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd Learning_C_CPP/3_lesson && clang++ -std=c++14 -I./Crow/include -lpthread -o main main.cpp && ./main"
 
 [[ports]]
 localPort = 8080
