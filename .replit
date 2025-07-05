@@ -53,7 +53,7 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Learning_C_CPP/3_lesson && clang++ -std=c++17 -I./Crow/include -lpthread -o main main.cpp && ./main"
+args = "cd Learning_C_CPP/3_lesson && clang++ -std=c++17 -I./Crow/include -lpthread -lsqlite3 -o main main.cpp && ./main"
 
 [[ports]]
 localPort = 5000
