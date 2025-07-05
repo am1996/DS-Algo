@@ -6,6 +6,8 @@ int main() {
   crow::SimpleApp app;
   CROW_ROUTE(app, "/register")
   ([](const crow::request req) {
+    if (req.method != crow::HTTPMethod::POST)
+      return crow::response(400, "Method not allowed");
     auto x = crow::json::load(req.body);
     if (!x)
       return crow::response(400);
