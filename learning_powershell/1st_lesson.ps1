@@ -38,4 +38,56 @@ while($a -le 10){
     $a+=1;
     Start-Sleep 1
 }
-[Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("Hello PowerShell")) | Write-Host -ForegroundColor Yellow
+# Using a hashtable and an array
+Write-Host "Using a hashtable and an array:" -ForegroundColor Yellow
+[hashtable]$hashTable = @{
+    Name = "Alice"
+    Age = 25
+    City = "New York"
+};
+$hashTable.GetEnumerator() | ForEach-Object {
+    Write-Host "$($_.Key): $($_.Value)" -ForegroundColor Magenta
+}
+
+$array = @(1,2,34,5,6,7,8,9,10)
+$array | ForEach-Object {
+    if($_ % 2 -eq 0){
+        Write-Host "Even number: $_" -ForegroundColor Blue
+    } else {
+        Write-Host "Odd number: $_" -ForegroundColor Red
+    }
+};
+
+# Using a switch statement
+Write-Host "Using a switch statement:" -ForegroundColor Yellow
+switch ($a) {
+    1 { Write-Host "One" -ForegroundColor Green }
+    2 { Write-Host "Two" -ForegroundColor Green }
+    3 { Write-Host "Three" -ForegroundColor Green }
+    default { Write-Host "Not one, two, or three" -ForegroundColor Red }
+}       
+# Using a try-catch block
+Write-Host "Using a try-catch block:" -ForegroundColor Yellow
+try {
+    $result = 10 / 0
+} catch {
+    Write-Host "An error occurred: $_" -ForegroundColor Red
+} finally {
+    Write-Host "This block always executes." -ForegroundColor Cyan
+}
+# Using a function
+Write-Host "Using a function:" -ForegroundColor Yellow
+function Get-Square {
+    param (
+        [int]$number
+    )
+    return $number * $number
+}
+$result = Get-Square -number 5
+Write-Host "The square of 5 is: $result" -ForegroundColor Magenta
+# Base64 encoding example
+Write-Host "Base64 encoding example:" -ForegroundColor Yellow
+$originalString = "Hello, PowerShell!"
+$bytes = [System.Text.Encoding]::UTF8.GetBytes($originalString)
+$base64String = [System.Convert]::ToBase64String($bytes)
+Write-Host "Base64 Encoded String: $base64String" -ForegroundColor Cyan
