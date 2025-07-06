@@ -1,10 +1,12 @@
 
-{ pkgs }: {
-  deps = [
-    pkgs.gcc
-    pkgs.crow
-    pkgs.sqlite
-    pkgs.pkg-config
-    pkgs.sqlite.dev
+{ pkgs ? import <nixpkgs> {} }:
+pkgs.mkShell {
+  buildInputs = with pkgs; [
+    asio
+    gcc
+    sqlite
+    pkg-config
+    sqlite.dev
+    cmake
   ];
 }

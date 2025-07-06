@@ -3,6 +3,7 @@
 #include <map>
 #include <numeric>
 #include <vector>
+
 using namespace std;
 
 int main(void) {
@@ -18,5 +19,5 @@ int main(void) {
   for (auto [key, value] : m) {
     cout << key << " " << value << endl;
   }
-  return 0;
+  return 1;
 }
