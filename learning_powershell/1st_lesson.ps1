@@ -31,3 +31,11 @@ Write-Host "Name: $($instance.name), Age: $($instance.age)" -ForegroundColor Mag
 } | ForEach-Object {
     Write-Host "Current time is: $($_.ToString('HH:mm:ss'))" -ForegroundColor Green
 }
+[int]$a=1;
+
+while($a -le 10){
+    Write-Host -ForegroundColor Green "Current number is: $a"
+    $a+=1;
+    Start-Sleep 1
+}
+[Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("Hello PowerShell")) | Write-Host -ForegroundColor Yellow
