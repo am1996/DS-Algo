@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fIsrhWQc6foJOrbGNkJ4KgnNGpm2wt2JZtiIwdgPX2lISb5DrKnzLrVT4N+9r56ci2LQ+I8FOY7gAdIh/1nMiw==",
+  "dgSpecHash": "p2+dNYkz20s=",
   "success": true,
-  "projectFilePath": "/home/runner/workspace/Learning_CSharp/2_lesson/2_lesson.csproj",
+  "projectFilePath": "D:\\projects\\DS-Algo\\Learning_CSharp\\2_lesson\\2_lesson.csproj",
   "expectedPackageFiles": [
-    "/home/runner/.nuget/packages/htmlagilitypack/1.12.1/htmlagilitypack.1.12.1.nupkg.sha512"
+    "C:\\Users\\ahmed.ahmed\\.nuget\\packages\\htmlagilitypack\\1.12.1\\htmlagilitypack.1.12.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -7,7 +7,5 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <Compile Include="Program.cs" />
-  <Compile Include="MD4.cs" />
 
 </Project>

@@ -70,19 +70,19 @@
     ]
   },
   "packageFolders": {
-    "/home/runner/.nuget/packages/": {}
+    "C:\\Users\\ahmed.ahmed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/runner/workspace/Learning_CSharp/2_lesson/2_lesson.csproj",
+      "projectUniqueName": "D:\\projects\\DS-Algo\\Learning_CSharp\\2_lesson\\2_lesson.csproj",
       "projectName": "2_lesson",
-      "projectPath": "/home/runner/workspace/Learning_CSharp/2_lesson/2_lesson.csproj",
-      "packagesPath": "/home/runner/.nuget/packages/",
-      "outputPath": "/home/runner/workspace/Learning_CSharp/2_lesson/obj/",
+      "projectPath": "D:\\projects\\DS-Algo\\Learning_CSharp\\2_lesson\\2_lesson.csproj",
+      "packagesPath": "C:\\Users\\ahmed.ahmed\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\DS-Algo\\Learning_CSharp\\2_lesson\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/runner/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ahmed.ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -105,7 +105,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -132,7 +133,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/nix/store/whzl3595mvibrs1lj1vgh34mda67gr28-dotnet-sdk-9.0.100-preview.2.24157.14/sdk/9.0.100-preview.2.24157.14/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\programs\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
