@@ -16,6 +16,7 @@ namespace _5_lesson
             int[] c = a.Skip(3).Take(4).ToArray();
             ImmutableArray<int> d = c.ToImmutableArray().Aggregate<int>((int a, int b, int c) => a * b * c);
             c.ToList().ForEach(Console.WriteLine);
+            Console.WriteLine(c.Sum());
         }
     }
 }
