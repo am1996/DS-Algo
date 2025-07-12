@@ -17,6 +17,12 @@ namespace _5_lesson
             ImmutableArray<int> d = c.ToImmutableArray().Aggregate<int>((int a, int b, int c) => a * b * c);
             c.ToList().ForEach(Console.WriteLine);
             Console.WriteLine(c.Sum());
+            Console.WriteLine(c.Average());
+            Console.WriteLine(c.Max());
+            Console.WriteLine(c.Min());
+            Console.WriteLine(c.Count());
+            Console.WriteLine(c.Distinct().Count());
+            
         }
     }
 }
