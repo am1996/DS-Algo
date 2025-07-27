@@ -8,24 +8,27 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ahmed.ahmed\\.nuget\\packages\\": {}
+    "C:\\Users\\AM\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\DS-Algo\\Learning_CSharp\\3_lesson\\3_lesson.csproj",
+      "projectUniqueName": "E:\\Ahmed\\projects\\DS-Algo\\Learning_CSharp\\3_lesson\\3_lesson.csproj",
       "projectName": "3_lesson",
-      "projectPath": "D:\\projects\\DS-Algo\\Learning_CSharp\\3_lesson\\3_lesson.csproj",
-      "packagesPath": "C:\\Users\\ahmed.ahmed\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\DS-Algo\\Learning_CSharp\\3_lesson\\obj\\",
+      "projectPath": "E:\\Ahmed\\projects\\DS-Algo\\Learning_CSharp\\3_lesson\\3_lesson.csproj",
+      "packagesPath": "C:\\Users\\AM\\.nuget\\packages\\",
+      "outputPath": "E:\\Ahmed\\projects\\DS-Algo\\Learning_CSharp\\3_lesson\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ahmed.ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\AM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -65,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\programs\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
