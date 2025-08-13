@@ -1,0 +1,15 @@
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\7_lesson.GeneratedMSBuildEditorConfig.editorconfig
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\7_lesson.AssemblyInfoInputs.cache
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\7_lesson.AssemblyInfo.cs
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\7_lesson.csproj.CoreCompileInputs.cache
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\7_lesson.sourcelink.json
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\bin\Debug\net9.0\7_lesson.exe
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\bin\Debug\net9.0\7_lesson.deps.json
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\bin\Debug\net9.0\7_lesson.runtimeconfig.json
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\bin\Debug\net9.0\7_lesson.dll
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\bin\Debug\net9.0\7_lesson.pdb
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\7_lesson.dll
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\refint\7_lesson.dll
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\7_lesson.pdb
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\7_lesson.genruntimeconfig.cache
+E:\Ahmed\projects\DS-Algo\Learning_CSharp\7_lesson\7_lesson\7_lesson\obj\Debug\net9.0\ref\7_lesson.dll
