@@ -14,3 +14,5 @@ Get-ScheduledTask | Where-Object {$_.TaskPath -notlike "\Microsoft*"}
 # Get Auto run
 Get-ChildItem "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
 
+wmic os get * 
+wmic cpu get *
