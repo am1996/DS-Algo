@@ -1,0 +1,5 @@
+﻿  md_l7.c
+E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l7\md_l7\md_l7.c(20,11): warning C4090: 'initializing': different 'const' qualifiers
+  md_l7.vcxproj -> E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l7\x64\Debug\md_l7.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
