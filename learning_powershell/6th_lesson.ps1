@@ -5,3 +5,7 @@ $regOutput | foreach {
         $matches[1]   # prints only the data (path)
     }
 }
+
+@'
+TM_SELECTED_TEXT hello wasdfasdf
+'@

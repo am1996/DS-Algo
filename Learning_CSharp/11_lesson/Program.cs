@@ -18,7 +18,7 @@ public class Program
                 short keyState = NtUserGetAsyncKeyState(i);
                 if ((keyState & 0x8000) != 0) // Check if the high-order bit is set
                 {
-                    Console.WriteLine($"Key {(char)i} is currently pressed.");
+                    Console.WriteLine($"Key {Convert.ToChar(i)} is currently pressed.");
                 }
             }
             System.Threading.Thread.Sleep(100); // Sleep to reduce CPU usage
