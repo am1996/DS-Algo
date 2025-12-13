@@ -18,4 +18,4 @@ def Closest_3_Numbers(nums, target):
       elif sum > target:
         right -= 1
       else:
-        return sum||
+        return sum
