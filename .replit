@@ -1,4 +1,4 @@
-modules = ["cpp-clang14", "c-clang14", "web", "python-3.12"]
+modules = ["cpp-clang14", "c-clang14", "web", "python-3.11"]
 run = "dotnet run"
 
 [nix]
