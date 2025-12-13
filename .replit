@@ -66,3 +66,6 @@ externalPort = 80
 
 [deployment]
 run = ["sh", "-c", "dotnet run"]
+
+[agent]
+expertMode = true
