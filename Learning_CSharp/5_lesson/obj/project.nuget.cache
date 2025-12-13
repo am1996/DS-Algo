@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "w4YQYbRFIzmXX4B1PtIR47anwSmaNi8GJK4pIC/BxqHrnKSSkuI/YGJMAqS+sasfz/UF62LjpIcAtdAgwb0ipw==",
   "success": true,
   "projectFilePath": "/home/runner/workspace/Learning_CSharp/5_lesson/5_lesson.csproj",
+=======
+  "dgSpecHash": "GM2YkOLhk6s=",
+  "success": true,
+  "projectFilePath": "E:\\Ahmed\\projects\\DS-Algo\\Learning_CSharp\\5_lesson\\5_lesson.csproj",
+>>>>>>> 60ea0d2f8ee48f321f26139f069c31712f511044
   "expectedPackageFiles": [],
   "logs": []
 }

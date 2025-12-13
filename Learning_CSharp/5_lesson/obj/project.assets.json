@@ -8,11 +8,16 @@
     "net9.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "/home/runner/.nuget/packages/": {}
+=======
+    "C:\\Users\\AM\\.nuget\\packages\\": {}
+>>>>>>> 60ea0d2f8ee48f321f26139f069c31712f511044
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/home/runner/workspace/Learning_CSharp/5_lesson/5_lesson.csproj",
       "projectName": "5_lesson",
       "projectPath": "/home/runner/workspace/Learning_CSharp/5_lesson/5_lesson.csproj",
@@ -21,11 +26,24 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/runner/.nuget/NuGet/NuGet.Config"
+=======
+      "projectUniqueName": "E:\\Ahmed\\projects\\DS-Algo\\Learning_CSharp\\5_lesson\\5_lesson.csproj",
+      "projectName": "5_lesson",
+      "projectPath": "E:\\Ahmed\\projects\\DS-Algo\\Learning_CSharp\\5_lesson\\5_lesson.csproj",
+      "packagesPath": "C:\\Users\\AM\\.nuget\\packages\\",
+      "outputPath": "E:\\Ahmed\\projects\\DS-Algo\\Learning_CSharp\\5_lesson\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\AM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> 60ea0d2f8ee48f321f26139f069c31712f511044
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +82,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "/nix/store/whzl3595mvibrs1lj1vgh34mda67gr28-dotnet-sdk-9.0.100-preview.2.24157.14/sdk/9.0.100-preview.2.24157.14/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 60ea0d2f8ee48f321f26139f069c31712f511044
       }
     }
   }

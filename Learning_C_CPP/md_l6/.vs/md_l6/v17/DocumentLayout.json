@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Ahmed\\projects\\DS-Algo\\Learning_C_CPP\\md_l6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F14C434B-7563-425B-AF26-BEC2331A853B}|md_l6\\md_l6.vcxproj|E:\\Ahmed\\projects\\DS-Algo\\Learning_C_CPP\\md_l6\\md_l6\\md_l6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F14C434B-7563-425B-AF26-BEC2331A853B}|md_l6\\md_l6.vcxproj|solutionrelative:md_l6\\md_l6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "md_l6.cpp",
+              "DocumentMoniker": "E:\\Ahmed\\projects\\DS-Algo\\Learning_C_CPP\\md_l6\\md_l6\\md_l6.cpp",
+              "RelativeDocumentMoniker": "md_l6\\md_l6.cpp",
+              "ToolTip": "E:\\Ahmed\\projects\\DS-Algo\\Learning_C_CPP\\md_l6\\md_l6\\md_l6.cpp",
+              "RelativeToolTip": "md_l6\\md_l6.cpp",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAC0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-02T20:51:01.646Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

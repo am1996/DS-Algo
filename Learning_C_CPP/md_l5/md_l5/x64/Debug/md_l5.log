@@ -1,0 +1,24 @@
+﻿  md_l5.cpp
+E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'TCHAR *'
+      E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16):
+      consider using '%ls' in the format string
+      E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16):
+      consider using '%lls' in the format string
+      E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16):
+      consider using '%Ls' in the format string
+      E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16):
+      consider using '%ws' in the format string
+  
+E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'TCHAR *'
+      E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16):
+      consider using '%ls' in the format string
+      E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16):
+      consider using '%lls' in the format string
+      E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16):
+      consider using '%Ls' in the format string
+      E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\md_l5\md_l5.cpp(26,16):
+      consider using '%ws' in the format string
+  
+  md_l5.vcxproj -> E:\Ahmed\projects\DS-Algo\Learning_C_CPP\md_l5\x64\Debug\md_l5.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

@@ -20,9 +20,9 @@ namespace _5_lesson
             Console.WriteLine(c.Average());
             Console.WriteLine(c.Max());
             Console.WriteLine(c.Min());
-            Console.WriteLine(c.Count());
+            Console.WriteLine(c.Length);
             Console.WriteLine(c.Distinct().Count());
-            
+            Console.WriteLine(c.Reverse().ToArray().Length);
         }
     }
 }

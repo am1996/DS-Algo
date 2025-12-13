@@ -1,0 +1,15 @@
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\Learning_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\Learning_CSharp.AssemblyInfoInputs.cache
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\Learning_CSharp.AssemblyInfo.cs
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\Learning_CSharp.csproj.CoreCompileInputs.cache
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\Learning_CSharp.sourcelink.json
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\bin\Debug\net9.0\Learning_CSharp.exe
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\bin\Debug\net9.0\Learning_CSharp.deps.json
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\bin\Debug\net9.0\Learning_CSharp.runtimeconfig.json
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\bin\Debug\net9.0\Learning_CSharp.dll
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\bin\Debug\net9.0\Learning_CSharp.pdb
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\Learning_CSharp.dll
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\refint\Learning_CSharp.dll
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\Learning_CSharp.pdb
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\Learning_CSharp.genruntimeconfig.cache
+D:\projects\DS-Algo\Learning_CSharp\11_lesson\obj\Debug\net9.0\ref\Learning_CSharp.dll
