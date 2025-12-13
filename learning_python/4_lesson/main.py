@@ -1,6 +1,12 @@
+from typing import Annotated
 from fastapi import FastAPI
 from pydantic import BaseModel
 from sqlalchemy import create_engine, text
+
+class Cookies(BaseModel):
+  model_config = {"extra":"forbid"}
+  session_id: str
+  fatetracker: str | None
 
 engine = create_engine("sqlite:///db.sqlite")
 
@@ -24,7 +30,7 @@ app = FastAPI()
 
 
 @app.get("/")
-async def root():
+async def root(cookies: Annotated[]):
   return {"message": "Hello World"}
 
 
