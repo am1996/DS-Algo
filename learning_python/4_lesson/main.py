@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from SQLAlchemy import create_engine
+from sqlalchemy import create_engine
 
 engine = create_engine("sqlite:///db.sqlite")
 
