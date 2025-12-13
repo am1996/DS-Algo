@@ -1,13 +1,14 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 
 engine = create_engine("sqlite:///db.sqlite")
 
 with engine.connect() as conn:
   conn.execute(
-      "CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER, is_active BOOLEAN, balance FLOAT)"
-  )
+      text(
+          "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER, is_active BOOLEAN, balance FLOAT)"
+      ))
   conn.commit()
 
 
@@ -23,10 +24,15 @@ app = FastAPI()
 
 
 @app.get("/")
-def root():
+async def root():
   return {"message": "Hello World"}
 
 
 @app.post("/users")
 def create_user(user: User):
-  return user
+  with engine.connect() as conn:
+    conn.execute(
+        text(
+            "INSERT INTO users (id, name, age, is_active, balance) VALUES (:id, :name, :age, :is_active, :balance)"
+        ), user.dict())
+    return user
