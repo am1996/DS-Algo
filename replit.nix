@@ -1,6 +1,7 @@
 
 { pkgs }: {
   deps = [
+    pkgs.perl538Packages.Mojolicious
     pkgs.sqlite
     pkgs.dotnetCorePackages.sdk_9_0
     pkgs.asio
