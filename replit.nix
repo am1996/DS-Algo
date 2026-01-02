@@ -1,6 +1,7 @@
 
 { pkgs }: {
   deps = [
+    pkgs.nim-unwrapped-2
     pkgs.go
     pkgs.python-launcher
     pkgs.perl538Packages.Mojolicious
