@@ -1,12 +1,18 @@
 # API using PowerShell + SQLite
-# Run setup.ps1 first to download the SQLite DLL
 
-# Load SQLite assembly
-Add-Type -Path "G:\projects\DS-Algo\learning_powershell\api\lib\System.Data.SQLite.dll"
+# SQLite.Interop.dll (native) must be next to the script at runtime
+$libDir    = "$PSScriptRoot\lib"
+$interopSrc = "$libDir\SQLite.Interop.dll"
+$interopDst = "$PSScriptRoot\SQLite.Interop.dll"
+if ((Test-Path $interopSrc) -and -not (Test-Path $interopDst)) {
+    Copy-Item $interopSrc $interopDst
+}
+
+Add-Type -Path "$libDir\System.Data.SQLite.dll"
 
 # --- DB Setup ---
 $dbPath = ".\data.db"
-ls -Path $dbPath -ErrorAction Ignore | Out-Null
+Get-ChildItem -Path $dbPath -ErrorAction Ignore | Out-Null
 if (-not (Test-Path $dbPath)) {
     [System.Data.SQLite.SQLiteConnection]::CreateFile($dbPath)
     Write-Host "Created new SQLite database at $dbPath"
