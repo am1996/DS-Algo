@@ -1,0 +1,15 @@
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\bin\Debug\net10.0\WeWillFigureItOut.exe
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\bin\Debug\net10.0\WeWillFigureItOut.deps.json
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\bin\Debug\net10.0\WeWillFigureItOut.runtimeconfig.json
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\bin\Debug\net10.0\WeWillFigureItOut.dll
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\bin\Debug\net10.0\WeWillFigureItOut.pdb
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\WeWillFigureItOut.GeneratedMSBuildEditorConfig.editorconfig
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\WeWillFigureItOut.AssemblyInfoInputs.cache
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\WeWillFigureItOut.AssemblyInfo.cs
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\WeWillFigureItOut.csproj.CoreCompileInputs.cache
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\WeWillFigureItOut.sourcelink.json
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\WeWillFigureItOut.dll
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\refint\WeWillFigureItOut.dll
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\WeWillFigureItOut.pdb
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\WeWillFigureItOut.genruntimeconfig.cache
+G:\projects\DS-Algo\mal_dev\WeWillFigureItOut\obj\Debug\net10.0\ref\WeWillFigureItOut.dll
